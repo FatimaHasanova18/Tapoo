@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tapoo</string>
+    <string name="tab">Tab</string>
+    <string name="easy">Asan</string>
+    <string name="medium">Orta</string>
+    <string name="tin">Çətin</string>
+    <string name="ba_la">Başla</string>
+</resources>
