@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#A4AC85"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textColor="#583115"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oyuncu adı"
+        android:textStyle="bold"
+        android:textColor="#343D2A"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="istifadəçi005"
+        android:textColor="#E6FFBF"
+        android:backgroundTint="#809F5E"
+        android:background="@drawable/oyuncu"
+        android:paddingStart="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintVertical_bias="0.14"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/pen"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trunk11"
+        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/choosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/varlikit"
+        app:layout_constraintHorizontal_bias="0.0000"
+        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tesdiqle"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tesdiqbtn"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tesdiqle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="TƏSDİQLƏ"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVATAR SEÇ:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#572E0E"
+        app:layout_constraintVertical_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:stretchColumns="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/ayi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/ayi" />
+
+                <ImageView
+                    android:id="@+id/pisik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/it" />
+
+                <ImageView
+                    android:id="@+id/meymun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/meymun" />
+            </TableRow>
+
+            <TableRow android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/agayi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/agayi" />
+
+                <ImageView
+                    android:id="@+id/sincab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/sincab" />
+
+                <ImageView
+                    android:id="@+id/panda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/panda" />
+            </TableRow>
+
+            <TableRow android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/tulku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/tulku" />
+
+                <ImageView
+                    android:id="@+id/fil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/fil" />
+
+                <ImageView
+                    android:id="@+id/maral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/maral" />
+            </TableRow>
+
+            <TableRow android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/peleng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/peleng" />
+
+                <ImageView
+                    android:id="@+id/dovsan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dovsan" />
+
+                <ImageView
+                    android:id="@+id/zebra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/zebra" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/at" />
+
+                <ImageView
+                    android:id="@+id/sican"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/sican" />
+
+                <ImageView
+                    android:id="@+id/pitbull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/pitbull" />
+            </TableRow>
+        </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

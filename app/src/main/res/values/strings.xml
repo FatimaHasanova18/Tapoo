@@ -1,8 +1,26 @@
 <resources>
-    <string name="app_name">Tapoo</string>
-    <string name="tab">Tab</string>
-    <string name="easy">Asan</string>
-    <string name="medium">Orta</string>
-    <string name="tin">Çətin</string>
-    <string name="ba_la">Başla</string>
+    <string name="app_name" translatable="false">Tapoo</string>
+    <string name="tab" translatable="false">Tab</string>
+    <string name="easy" translatable="false">Asan</string>
+    <string name="medium" translatable="false">Orta</string>
+    <string name="tin" translatable="false">Çətin</string>
+    <string name="ba_la" translatable="false">Başla</string>
+    <string name="telefon" translatable="false">Telefon</string>
+    <string name="zeng" translatable="false">Zeng</string>
+    <string name="mesaj" translatable="false">Mesaj</string>
+    <string name="danismaq" translatable="false">Danismaq</string>
+    <string name="nomre" translatable="false">nomre</string>
+    <string name="ekran" translatable="false">ekran</string>
+    <string name="hello">hello</string>
+    <string name="hello2">hello</string>
+    <string-array name="spinner_times">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+    </string-array>
+    <string-array name="spinner_language">
+        <item>Azərbaycanca</item>
+        <item>İngiliscə</item>
+        <item>Rusca</item>
+    </string-array>
 </resources>

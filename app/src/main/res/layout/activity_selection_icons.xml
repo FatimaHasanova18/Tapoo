@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FAFED3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionIcons">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chooseprofile"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ayi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ayi" />
+
+            <ImageView
+                android:id="@+id/pisik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/it" />
+
+            <ImageView
+                android:id="@+id/meymun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/meymun" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/agayi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/agayi" />
+
+            <ImageView
+                android:id="@+id/sincab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/sincab" />
+
+            <ImageView
+                android:id="@+id/panda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/panda" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/tulku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/tulku" />
+
+            <ImageView
+                android:id="@+id/fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/fil" />
+
+            <ImageView
+                android:id="@+id/maral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/maral" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/peleng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/peleng" />
+
+            <ImageView
+                android:id="@+id/dovsan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dovsan" />
+
+            <ImageView
+                android:id="@+id/zebra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/zebra" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/at" />
+
+            <ImageView
+                android:id="@+id/sican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/sican" />
+
+            <ImageView
+                android:id="@+id/pitbull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/pitbull" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

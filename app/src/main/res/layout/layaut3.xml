@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/shapedetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shapedetail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/vaxtbittdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vaxtbittdi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/istifadeci005"
+            android:layout_width="147dp"
+            android:layout_height="40dp"
+            android:text="istifadeci005"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintVertical_bias="0.255"
+            app:layout_constraintTop_toBottomOf="@id/vaxtbittdi"
+            android:background="@drawable/shapebutton"
+            app:layout_constraintStart_toEndOf="@id/arxa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="-20dp"
+            />
+
+        <ImageView
+            android:id="@+id/arxa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arxa"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/vaxtbittdi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            />
+
+        <ImageView
+         android:id="@+id/varliq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/varliq"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/vaxtbittdi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/duzgun_cavablarin_sayi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="duzgun cavablarin sayi :"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#227520"
+            app:layout_constraintTop_toBottomOf="@id/varliq"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/trueAnswerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/yanlis_cavablarinn_sayi"
+            app:layout_constraintBottom_toTopOf="@id/yanlis_cavablarinn_sayi"
+            app:layout_constraintStart_toEndOf="@id/yanlis_cavablarinn_sayi"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/yanlis_cavablarinn_sayi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yanlis cavablarinn sayi :"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#C5241B"
+            app:layout_constraintTop_toBottomOf="@id/duzgun_cavablarin_sayi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/falseAnswerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/yanlis_cavablarinn_sayi"
+            app:layout_constraintStart_toEndOf="@id/duzgun_cavablarin_sayi"
+            app:layout_constraintTop_toTopOf="@+id/duzgun_cavablarin_sayi"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <ImageView
+            android:id="@+id/ev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            app:layout_constraintTop_toBottomOf="@id/yanlis_cavablarinn_sayi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/restart"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="32dp"
+            />
+
+        <ImageView
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restart"
+            app:layout_constraintTop_toBottomOf="@id/yanlis_cavablarinn_sayi"
+            app:layout_constraintStart_toEndOf="@id/ev"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="46dp"
+            android:layout_marginStart="32dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

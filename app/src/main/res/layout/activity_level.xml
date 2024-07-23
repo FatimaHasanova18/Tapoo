@@ -9,10 +9,10 @@
     tools:context=".Level">
 
     <ImageView
-        android:id="@+id/end"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/x"
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
@@ -46,6 +46,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35" />
     <Button
+        android:id="@+id/orta"
         android:layout_width="323dp"
         android:layout_height="60dp"
         android:background="@drawable/selectedmediumlevel"
@@ -60,6 +61,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
     <Button
+        android:id="@+id/cetin"
         android:layout_width="323dp"
         android:layout_height="60dp"
         android:background="@drawable/selectedhardlevel"
@@ -73,15 +75,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
-
-    <TextView
-        android:id="@+id/txtDeneme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Deneme"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

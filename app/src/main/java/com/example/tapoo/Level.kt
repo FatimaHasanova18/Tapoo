@@ -1,16 +1,13 @@
 package com.example.tapoo
 
-import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tapoo.databinding.ActivityLevelBinding
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class Level : AppCompatActivity() {
@@ -18,15 +15,22 @@ class Level : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLevelBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-        binding.end.setOnClickListener {
-            MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_App_MaterialAlertDialog)
-
-                .setTitle("Title")
-                .show()
+//        binding.apply {
+//            val intent = Intent(this@Level, DetailsActivity12::class.java)
+//            listOf(btn1, orta, cetin).forEach { view ->
+//                view.setOnClickListener {
+//                    startActivity(intent)
+//                }
+//            }
+//        }
+        binding.arrow.setOnClickListener {
+            val intent = Intent(this,DetailsActivity11::class.java)
+            startActivity(intent)
         }
+
 
 
 
